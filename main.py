@@ -21,11 +21,12 @@ def parse(response: dict) -> list[str]:
 
 if __name__ == "__main__":
     
-    url = "https://search.yandex-team.ru/suggest/?text=Саптех&version=2&people.per_page=10"
+    url = "путь до url"
 
 
     response = requests.get(url)
     response_dict = response.json()
 
     logins = parse(response_dict)
+
     print(logins)
